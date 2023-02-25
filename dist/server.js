@@ -32,6 +32,6 @@ server.post("/api", async (req, res) => {
         }
     }
 });
-server.listen(5000);
+server.listen(Number(process.env.PORT), process.env.HOST);
 console.log("Server listening on port", port);
 //# sourceMappingURL=server.js.map

@@ -7,7 +7,7 @@ async function insert(queryValues, pool) {
     };
     const client = await pool.connect();
     await client.query(query);
-    client.release();
+    await client.release();
 }
 export default insert;
 //# sourceMappingURL=handler.js.map
