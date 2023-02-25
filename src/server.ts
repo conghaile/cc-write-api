@@ -36,5 +36,5 @@ server.post("/api", async (req: Request, res: Response) => {
     }
 })
 
-server.listen(5000)
+server.listen(process.env.PORT, process.env.HOST)
 console.log("Server listening on port", port)
